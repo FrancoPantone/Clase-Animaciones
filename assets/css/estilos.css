@@ -12,34 +12,17 @@ html,body{
 #wrapper{
     display: grid;
     grid-template-areas: 
-    "miHeader "
+    "miHeader"
     "banda"
     "discografia"
     "miFooter"
     ;
     grid-template-rows:60px 1fr 1fr 40px ;
+    grid-template-columns: 100%;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
     width: 100%;
     height: 100vh;
-}
-
-@media screen and (min-width: 992px) {
-    #wrapper{
-        display: grid;
-        grid-template-areas: 
-        "miHeader miHeader"
-        "banda integrantes"
-        "discografia discografia"
-        "miFooter miFooter"
-        ;
-        grid-template-columns: auto 200px;
-        grid-template-rows:60px 1fr 1fr 40px ;
-        grid-row-gap: 5px;
-        grid-column-gap: 5px;
-        width: 100%;
-        height: 100vh;
-    }
 }
 
 
@@ -49,6 +32,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top:0;
+        
 }
 
 header h1 {
@@ -60,6 +46,7 @@ header h1 {
 
 header nav {
     margin-right: 20px;
+    
 
 }
 
@@ -87,6 +74,7 @@ section#banda {
 section#integrantes {
     grid-area: integrantes;
     background-color: rgb(109, 108, 108);
+    visibility: hidden;
 }
 
 section#integrantes h2 {
@@ -174,4 +162,22 @@ footer {
 
 footer i {
     margin: 0 5px;
+}
+
+@media screen and (min-width: 992px) {
+    #wrapper{
+        display: grid;
+        grid-template-areas: 
+        "miHeader miHeader"
+        "banda integrantes"
+        "discografia discografia"
+        "miFooter miFooter"
+        ;
+        grid-template-columns: auto 200px;
+        
+    }
+
+    section#integrantes {
+        visibility: visible;
+    }
 }
