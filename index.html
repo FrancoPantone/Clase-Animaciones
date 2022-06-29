@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/estilos.css" />
   <script src="https://kit.fontawesome.com/c3971899db.js" crossorigin="anonymous"></script>
+  <link href="assets/css/animate.css" rel="stylesheet" />
+  <script src="assets/js/wow.js"></script>
+  <script>
+    new WOW().init();
+ </script>
   <title>NTVG</title>
 
 </head>
 <body>
 <div id="wrapper">
   <header  id="miHeader">
-    <h1>NO TE VA GUSTAR</h1>
+    <h1 class="wow animate__animated animate__fadeInDown">NO TE VA GUSTAR</h1>
     <nav>
-      <ul>
+      <ul class="wow animate__animated animate__fadeInDown" data-wow-duration="1s">
         <li><a href="index.html">INICIO</a></li>
         <li><a href="#">HISTORIA</a></li>
         <li><a href="discografia.html">DISCOGRAFIA</a></li>
@@ -28,53 +33,54 @@
     <img src="./img/historia.jpg"
     alt="Los 8 integrantes de No te va gustar"
     width="100%"
-    height="auto" 
+    height="auto"
+    class="wow animate__animated animate__fadeIn" 
   />
   </section>
 
   <section id="discografia" >
-    <h2>D I S C O G R A F I A</h2>
+    <h2 class ="wow animate__animated animate__bounceIn">D I S C O G R A F I A</h2>
       <div id="discos">
-      <article>
-        <a target="_blank" href="https://open.spotify.com/album/4C6joZxFL6lTg6tJDE9N6o"><img src="./img/tapa-luz.jpg"/></a>
-        <h3>LUZ (2021)</h3>
-      </article>
-      <article>
-        <img src="./img/cd-otras.jpg"/>
-        <h3>OTRAS CANCIONES LATAM (EN VIVO) (2020)</h3>
-      </article>
-      <article>
-        <img src="./img/25-canciones.jpg"/>
-        <h3>OTRAS CANCIONES EN VIVO (2019)</h3>
-      </article>
-      <article>
-        <img src="./img/suenan-las-alarmas.jpg"/>
-        <h3>SUENAN LAS ALARMAS (2017)</h3>
-      </article>
-      <article>
-        <img src="./img/avanza.jpg"/>
-        <h3>EL TIEMPO OTRA VEZ AVANZA (2014)</h3>
-      </article>
-      <article>
-        <img src="./img/envivo.jpg"/>
-        <h3>NTVG EN VIVO BUENOS AIRES (2014)</h3>
-      </article>
-      <article>
-        <img src="./img/calor.jpg"/>
-        <h3>EL CALOR DEL PLENO INVIERNO (2012)</h3>
-      </article>
-      <article>
-        <img src="./img/publicocd.jpg"/>
-        <h3>PUBLICO (LIVE) (2012)</h3>
-      </article>
-      <article>
-        <img src="./img/porlomenos.jpg"/>
-        <h3>POR LO MENOS HOY (2010)</h3>
-      </article>
-      <article>
-        <img src="./img/sol.jpg"/>
-        <h3>SOLO DE DIA (2009)</h3>
-      </article>
+        <article class="wow animate__animated animate__backInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s">
+          <a target="_blank" href="https://open.spotify.com/album/4C6joZxFL6lTg6tJDE9N6o"><img src="./img/tapa-luz.jpg"/></a>
+          <h3>LUZ (2021)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s">
+          <a target="_blank" href="https://open.spotify.com/album/4UGpnKpfb814RkAWPUtSVP"><img src="./img/cd-otras.jpg"/></a>
+          <h3>OTRAS CANCIONES LATAM (EN VIVO) (2020)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s">
+          <a target="_blank" href="https://open.spotify.com/album/72SqrtijWJKq6ukitktd1D"><img src="./img/25-canciones.jpg"/></a>
+          <h3>OTRAS CANCIONES EN VIVO (2019)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInRight" data-wow-duration="0.7s" data-wow-delay="0.3s">
+          <a target="_blank" href="https://open.spotify.com/album/5j5VrewC19P5osNjNanIu6"><img src="./img/suenan-las-alarmas.jpg"/></a>
+          <h3>SUENAN LAS ALARMAS (2017)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">
+          <a target="_blank" href="https://open.spotify.com/album/314m9ZiGXnoaDtXp96LlHs"><img src="./img/avanza.jpg"/></a>
+          <h3>EL TIEMPO OTRA VEZ AVANZA (2014)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s">
+          <a target="_blank" href="https://open.spotify.com/album/67WlOjAlClWfVuIWK6oQ4r"><img src="./img/envivo.jpg"/></a>
+          <h3>NTVG EN VIVO BUENOS AIRES (2014)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s">
+          <a target="_blank" href="https://open.spotify.com/album/1rfWo44UYWqM3a99Vknlc3"><img src="./img/calor.jpg"/></a>
+          <h3>EL CALOR DEL PLENO INVIERNO (2012)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">
+          <a target="_blank" href="https://open.spotify.com/album/2bsgIaaXUmgo5lhHhaobJb"><img src="./img/publicocd.jpg"/></a>
+          <h3>PUBLICO (LIVE) (2012)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInRight" data-wow-duration="0.7s" data-wow-delay="0.3s">
+          <a target="_blank" href="https://open.spotify.com/album/1TOwIV6ewSvQ7qn0Gsxtdp"><img src="./img/porlomenos.jpg"/></a>
+          <h3>POR LO MENOS HOY (2010)</h3>
+        </article>
+        <article class="wow animate__animated animate__backInRight" data-wow-duration="0.7s" data-wow-delay="0.4s">
+          <a target="_blank" href="https://open.spotify.com/album/4WoGOnzso5RmTV49XBtP3i"><img src="./img/sol.jpg"/></a>
+          <h3>SOLO DE DIA (2009)</h3>
+        </article>
       </div>
       
       <div id="boton">
@@ -88,9 +94,9 @@
   </section>
 
   <section id="integrantes">
-    <h2> INTEGRANTES</h2>
+    <h2 class="wow animate__animated animate__zoomIn"> INTEGRANTES</h2>
     <div id="laBanda">
-    <ul>
+    <ul class="wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
       <li class="integrantes"> <h3>Emiliano Brancciari</h3>
       <h4>(VOZ Y GUITARRA)</h4>
       <li class="integrantes"> <h3>Martín Gil</h3>
